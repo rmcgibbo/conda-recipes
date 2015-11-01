@@ -6,10 +6,19 @@ build:
   skip:
     - [unix]
 
+<<<<<<< HEAD
 source:
   fn: swigwin-3.0.7.zip
   url: http://prdownloads.sourceforge.net/swig/swigwin-3.0.7.zip
   sha256: 11423c4a37209ea501d04d2bf7f71c275cf418b93a28cf062c87b3c1fdfbe286
+=======
+requirements:
+  build:
+    - python  [not win]
+    - pcre    [not win]
+  run:
+    - pcre    [not win]
+>>>>>>> ae390bb... not win
 
 test:
   commands:
